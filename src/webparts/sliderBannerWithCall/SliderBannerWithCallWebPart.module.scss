@@ -1,0 +1,327 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.bannerSection .imgBox{
+  width:100%;
+  border: 1px solid #fff;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+
+}
+.bannerSection .imgBox img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+   transition: transform .5s;
+}
+.bannerSection .innerContents{
+  position: absolute;
+  top: 0;
+  background: #000;
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(top, transparent 55%, #000 100%);
+    background: linear-gradient(to bottom, transparent 55%, #000 100%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.bannerSection .imgBox:hover .innerContents{
+  background: -webkit-linear-gradient(top, transparent 1%, #000 100%);
+    background: linear-gradient(to bottom, transparent 20%, #000 100%);
+}
+.bannerSection .imgBox:hover img{
+   transform: scale(1.05);
+}
+.bannerSection .innerContents h4{
+  color: #fff;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.bannerSection .imgBox:hover h4{
+  mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.6) 30%, #000 50%, rgba(0, 0, 0, 0.6) 70%);
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.6) 30%, #000 50%, rgba(0, 0, 0, 0.6) 70%);
+  mask-size: 200%;
+  -webkit-mask-size: 200%;
+  animation: shine 1s infinite;
+  cursor: pointer;
+}
+
+@keyframes shine {
+  from {
+    mask-position: 150%;
+  }
+
+  to {
+    mask-position: -50%;
+  }
+}
+
+.bannerSection .bannerSlides {display: none;height: 100%;}
+.bannerSection img {vertical-align: middle;}
+
+
+.bannerSection .slideshowContainer {
+height: 100%;
+position: relative;
+margin: auto;
+border: 1px solid #fff;
+background: -webkit-linear-gradient(top, transparent 55%, #000 100%);
+ background: linear-gradient(to bottom, transparent 55%, #000 100%);
+}
+
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 16px;
+margin-top: -22px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+.seeAllText {
+padding: 8px 15px;
+position: absolute;
+top:20px;
+right: 20px;
+z-index: 1;
+cursor: pointer;
+background: #fff;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+border-radius: 5px;
+transition: .3s ease-in-out;
+}
+.seeAllText:hover{
+  background-color: rgb(0, 78, 140);
+}
+.seeAllText:hover a{
+  color: #fff;
+  transition: .3s ease-in-out;
+}
+.PositionRelative{
+  position: relative;
+}
+
+.seeAllText a{
+text-decoration: none;
+color: rgb(0, 78, 140);
+font-size: 14px;
+}
+
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+cursor: pointer;
+}
+
+.bannerSection .text {
+color: #f2f2f2;
+font-size: 26px;
+padding: 8px 12px;
+position: absolute;
+bottom: 30px;
+left: 30px;
+z-index: 1;
+cursor: pointer;
+}
+
+
+
+.bannerSection .dot {
+cursor: pointer;
+height: 10px;
+width: 10px;
+margin: 0 2px;
+background-color: transparent;
+border: 1px solid #fff;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.bannerSection .active, .bannerSection .dot:hover {
+background-color: #fff;
+}
+
+/* Fading animation */
+.fade {
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+
+
+.dotsDiv{
+text-align: center;
+position: absolute;
+bottom: 10px;
+left: 50%;
+transform: translateX(-50%);
+}
+
+.bannerSlides{  
+position: relative;
+}
+.bannerSlides img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+.slidesDiv{
+  height: 100%;
+}
+.slideImageDiv{
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.slideImageDiv img{
+  transition: .3s ease-in-out;
+}
+.bannerSlides:hover img{
+  transform: scale(1.05);
+}
+.bannerSlides:hover .text{
+  mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.6) 30%, #000 50%, rgba(0, 0, 0, 0.6) 70%);
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.6) 30%, #000 50%, rgba(0, 0, 0, 0.6) 70%);
+  mask-size: 200%;
+  -webkit-mask-size: 200%;
+  animation: shine 1s infinite;
+  cursor: pointer;
+}
+.bottomGradient{
+ cursor: pointer;
+ position: absolute;
+ bottom: 0;
+ width: 100%;
+ height: 100%;
+ background: -webkit-linear-gradient(top, transparent 75%, #000 100%)!important;
+ background: linear-gradient(to bottom, transparent 75%, #000 100%)!important;
+}
+.containerFluid{
+width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.rowFlex{
+--bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.colMd6{
+flex: 0 0 auto;
+  width: 50%;
+  padding: 0!important;
+}
+.colSm6{
+flex: 0 0 auto;
+  width: 50%;
+  padding: 0!important;
+  height: 50%;
+}
+.ParentHeight{
+  height: 650px;
+  overflow: hidden;
+}
+
+/**Responsive **/
+@media only screen and (max-width: 1920px) {
+  .ParentHeight{
+    height: 650px;
+    overflow: hidden;
+  }
+
+  }
+
+  @media only screen and (max-width: 1600px) {
+    .ParentHeight{
+      height: 550px;
+    }
+    
+    }
+    @media only screen and (max-width: 1400px) {
+      .ParentHeight{
+        height: 450px;
+    }
+      
+    }
+
+    @media only screen and (max-width: 1200px) {
+      .ParentHeight{
+        height: 350px;
+      }
+        
+    }
+
+@media only screen and (max-width: 300px) {
+.prev, .next,.text {font-size: 11px}
+}
+@media only screen and (max-width: 1200px) {
+.bannerSection .innerContents h4{
+  font-size: 18px;
+}
+.bannerSection .innerContents{
+  padding: 15px;
+}
+
+}
+
+@media only screen and (max-width: 768px) {
+  .colMd6{
+    width: 100%;
+  }
+  .seeAllText{
+    right: 30px;
+    top: 30px;
+  }
+  .bannerSection .text{
+    left: 15px;
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 567px) {
+.bannerSection .text{
+  left: 15px;
+  font-size: 20px;
+}
+.bannerSection .innerContents h4{
+  font-size: 16px;
+}
+.bannerSection .innerContents{
+  padding: 10px;
+}
+.ParentHeight{
+  height: 300px;
+}
+}
+
+.j_b_8474018e{
+  max-width: 100%!important;
+}

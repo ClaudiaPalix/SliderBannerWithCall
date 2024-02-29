@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "slider-banner-with-call-client-side-solution",
+    "id": "b31a2e9a-ec49-4488-9d16-e5bbcea80a27",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.18.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "slider-banner-with-call description"
+      },
+      "longDescription": {
+        "default": "slider-banner-with-call description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "slider-banner-with-call Feature",
+        "description": "The feature that activates elements of the slider-banner-with-call solution.",
+        "id": "eade7909-6a1a-45d3-b4e8-2bfdbc12fbf3",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/slider-banner-with-call.sppkg"
+  }
+}

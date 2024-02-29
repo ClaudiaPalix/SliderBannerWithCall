@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "18.18.0",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.12.0"
+    },
+    "version": "1.18.0",
+    "libraryName": "slider-banner-with-call",
+    "libraryId": "b31a2e9a-ec49-4488-9d16-e5bbcea80a27",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "slider-banner-with-call",
+    "solutionShortDescription": "slider-banner-with-call description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

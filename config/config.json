@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "slider-banner-with-call-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/sliderBannerWithCall/SliderBannerWithCallWebPart.js",
+          "manifest": "./src/webparts/sliderBannerWithCall/SliderBannerWithCallWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "SliderBannerWithCallWebPartStrings": "lib/webparts/sliderBannerWithCall/loc/{locale}.js"
+  }
+}
